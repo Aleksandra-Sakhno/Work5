@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Products Management" verbose="1" >
+    <test name="CreateAndCheckProduct [Chrome]" >
+    <classes>
+        <class name="NewTestsNGTest">
+            <methods>
+                <include name="CheckShopTest">
+                    <parameter name="url"  value="http://prestashop-automation.qatestlab.com.ua/"/>
+                    <parameter name="browser" value="chrome"/>
+                </include>
+                <include name="CheckProductTest">
+                    <parameter name="url" value="http://prestashop-automation.qatestlab.com.ua/"/>
+                    <parameter name="browser" value="chrome"/>
+                </include>
+            </methods>
+        </class>
+    </classes>
+</test>
+</suite>
